@@ -4,10 +4,12 @@
 
 @theme {
 	--font-*: initial;
-	--font-heading: sans-serif;
-	--font-body: sans-serif;
+	--font-raleway: raleway, sans-serif;
+	--font-body: proxima-nova, sans-serif;
 
-	--color-brand-primary: ;
+	--color-brand-primary: #f2c955;
+	--color-brand-secondary: #2f6eb3;
+	--color-brand-orange: #e08030;
 }
 
 @utility container {
