@@ -2,12 +2,13 @@
 import Layout from '@layouts/Layout.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
+import Cta from '@components/Cta.astro';
 ---
 
 <Layout title='Astro'>
 	<Header />
-	<div class='max-w-[1920px] mx-auto relative'>
-		<div class="hidden xl:block absolute top-16 left-0 h-screen z-50">
+	<div class='max-w-[1920px] mx-auto relative bg-linear-to-r from-[#f3c955] to-[#e7c75e]'>
+		<div class="hidden xl:block fixed top-16 left-0 bottom-0 h-full z-60">
 			<div class="h-full border-r border-white pt-2 pl-6 pr-2.5 space-y-1">
 				<a href="/" class="bg-brand-secondary rounded-full p-1 size-8 flex justify-center items-center hover:bg-black btn">
 					<svg class="size-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"></path></svg>
@@ -23,20 +24,133 @@ import Footer from '@components/Footer.astro';
 				</a>
 			</div>
 		</div>
-		<div class="relative bg-brand-primary">
+		<div class="relative">
 			<img src="/img/bg-hero-home.webp" class="w-full h-full inset-0 absolute inset-0 object-[15%_50%] sm:object-[40%_50%] md:object-[50%_50%] object-cover" alt="">
 			<div class="xl:w-[calc(100%-66px)] ml-auto">
-				<div class="container relative z-20 pt-40 md:pt-44 lg:pt-48 xl:pt-64 2xl:pt-74 pb-40 md:pb-50 xl:pb-64 2xl:pb-56">
-					<div class="sm:w-[55%] lg:w-1/2 xl:w-[43%] 2xl:w-2/5">
+				<div class="container xl:px-12 relative z-20 pt-40 md:pt-44 lg:pt-48 xl:pt-64 2xl:pt-74 pb-40 md:pb-50 xl:pb-64 2xl:pb-56">
+					<div class="sm:w-[55%] lg:w-1/2 xl:w-[45%] 2xl:w-2/5">
 						<h1 class="text-white text-4xl/[40px] md:text-5xl/[56px] xl:text-6xl/[72px] font-bold">De <span class="text-brand-secondary">Beste</span> Frietjes in echte puntzak!</h1>
 						<span class="w-16 md:w-20 h-1.5 md:h-2 lg:h-2.5 bg-white block mt-3 md:mt-4"></span>
-						<span class="w-5/6 md:w-3/4 lg:w-2/3 2xl:w-[55%] block pt-6 md:pt-8 lg:pt-10">
+						<span class="w-5/6 md:w-3/4 lg:w-[70%] xl:w-2/3 2xl:w-3/5 block pt-6 md:pt-8 lg:pt-10">
 							<p class="text-white text-xs">Nequatiis reptatur, simagnis aut es exerumendam volor se vidus, im rate volland iaspis et electatus aut etur arci volorem int am iditas sitam ullacepta dis et rem hit expelitiae. Bus, necto qui voloriatem re pe ni rem antia dolum quae net lacerit eum volut voluptius, corias eos soluptasimi, sinulpariam fugitium quo conse rescias dolest lam quiasin etur?</p>
 						</span>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="relative">
+			<img src="/img/bg-offer.jpg" class="absolute inset-x-0 bottom-0 w-full h-full object-cover" alt="">
+			<div class="xl:w-[calc(100%-66px)] ml-auto relative z-20 pb-26 sm:pb-39 lg:pb-45 xl:pb-59">
+				<div class="container pt-14 md:pt-16 xl:px-12">
+					<div class="xl:w-[95%] mx-auto mb-16 xl:mb-24">
+						<h2 class="text-center text-white text-4xl/[40px] md:text-5xl/[56px] xl:text-6xl/[72px] font-bold pb-8 md:pb-10 xl:pb-12">Ons <span class="text-brand-secondary">aanbod</span></h2>
+						<div class="flex flex-col md:flex-row gap-3">
+							<div class="md:w-[30%] bg-brand-secondary px-3 py-5">
+								<ul class="gap-y-1 md:gap-y-3 justify-center md:justify-start gap-x-8 md:gap-x-3 lg:gap-5 flex flex-wrap md:flex-nowrap flex-row md:flex-col text-center md:text-left">
+									<li class="uppercase text-white group">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+											HAPJES
+											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+										</span>
+									</li>
+									<li class="uppercase text-white group">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+											WARME LUCHTOVEN
+											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+										</span>
+									</li>
+									<li class="uppercase text-white group">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+											MENU'S
+											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+										</span>
+									</li>
+									<li class="uppercase text-white group">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+											MENU'S OP BORD
+											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+										</span>
+									</li>
+									<li class="uppercase text-white group">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+											PASTA
+											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="md:w-[70%]">
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-10 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/kipsate.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Kipsaté</h3>
+									<span class="block sm:w-34 lg:w-38">
+										<p class="text-white text-xs xl:w-5/6">Perfect gekruide kipsatés</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-9 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/bitterballen.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Reuze bitterballen</h3>
+									<span class="block sm:w-34 lg:w-38">
+										<p class="text-white text-xs xl:w-5/6">De enige echte Kwekkelboom</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-8 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/kaassticks.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Kaassticks</h3>
+									<span class="block sm:w-34 lg:w-38">
+										<p class="text-white text-xs xl:w-5/6">Stick gevuld met romige kaas</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-7 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/mini-loempias.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Mini loempia's</h3>
+									<span class="block sm:w-34 lg:w-38">
+										<p class="text-white text-xs xl:w-5/6">Knapperige loempia's geserveerd met pikante saus</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-6 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/scampi-twister.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Scampi twister</h3>
+									<span class="block sm:w-34 lg:w-38">
+										<p class="text-white text-xs xl:w-5/6">Hapje in filodeeg met scampi en groentjes</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-5 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/bami.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Bami</h3>
+									<span class="block sm:w-34 lg:w-38">
+										<p class="text-white text-xs xl:w-5/6">Frituurhapje gevuld met noedels</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pb-14 sm:pb-16">
+					<div class="sm:h-72 2xl:h-100 relative">
+						<img src="/img/about-image.webp" class="sm:w-1/2 lg:w-3/5 2xl:w-[54%] sm:absolute h-full left-0 object-cover" alt="">
+						<div class="container xl:px-12 sm:h-72 2xl:h-100 flex items-center">
+							<div class="sm:w-1/2 lg:w-2/5 ml-auto sm:pl-10 xl:pl-16 2xl:pl-0 pt-6 sm:pt-0">
+								<h2 class="text-white text-4xl/[40px] md:text-5xl/[56px] xl:text-6xl/[72px] font-bold">Over <span class="text-brand-secondary"> ons</span></h2>
+								<span class="w-16 md:w-20 h-1.5 md:h-2 lg:h-2.5 bg-white block mt-3 md:mt-4"></span>
+								<span class="block pt-6 md:pt-8">
+									<p class="text-white text-xs font-medium">Nequatiis reptatur, simagnis aut es exerumendam volor se vidus, im rate volland iaspis et electatus aut etur arci volorem int am iditas sitam ullacepta dis et rem hit expelitiae. Bus, necto qui voloriatem re pe ni rem antia dolum quae net lacerit eum volut voluptius, corias eos soluptasimi, sinulpariam fugitium quo conse rescias dolest lam quiasin etur?</p>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<Footer />
+	<div class="bg-linear-to-r from-[#f3c955] to-[#e7c75e]">
+		<Cta />
+		<Footer />
+	</div>
 </Layout>
