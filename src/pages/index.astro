@@ -48,87 +48,336 @@ import Cta from '@components/Cta.astro';
 							<div class="md:w-[30%] bg-brand-secondary px-3 py-5">
 								<ul class="gap-y-1 md:gap-y-3 justify-center md:justify-start gap-x-8 md:gap-x-3 lg:gap-5 flex flex-wrap md:flex-nowrap flex-row md:flex-col text-center md:text-left">
 									<li class="uppercase text-white group">
-										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-white xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
 											HAPJES
 											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
 										</span>
 									</li>
 									<li class="uppercase text-white group">
-										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-white xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
 											WARME LUCHTOVEN
 											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
 										</span>
 									</li>
 									<li class="uppercase text-white group">
-										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-white xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
 											MENU'S
 											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
 										</span>
 									</li>
 									<li class="uppercase text-white group">
-										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
-											MENU'S OP BORD
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-white xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+											MENU'S OP BOARD
 											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
 										</span>
 									</li>
 									<li class="uppercase text-white group">
-										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
+										<span class="flex items-center xl:gap-2 lg:text-xl group-hover:text-brand-primary xl:group-hover:text-white xl:group-hover:text-2xl font-semibold xl:font-normal xl:group-hover:font-semibold">
 											PASTA
 											<svg class="text-white opacity-0 hidden xl:block group-hover:opacity-100 size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
 										</span>
 									</li>
 								</ul>
 							</div>
+							<!-- HAPJES -->
 							<div class="md:w-[70%]">
-								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-10 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-10 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
 									<img src="/img/kipsate.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
-									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Kipsaté</h3>
-									<span class="block sm:w-34 lg:w-38">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Kipsaté</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
 										<p class="text-white text-xs xl:w-5/6">Perfect gekruide kipsatés</p>
 									</span>
-									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">HAPJES</span>
 								</div>
 								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-9 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
 									<img src="/img/bitterballen.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
-									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Reuze bitterballen</h3>
-									<span class="block sm:w-34 lg:w-38">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Reuze bitterballen</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
 										<p class="text-white text-xs xl:w-5/6">De enige echte Kwekkelboom</p>
 									</span>
-									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">HAPJES</span>
 								</div>
 								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-8 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
 									<img src="/img/kaassticks.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
-									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Kaassticks</h3>
-									<span class="block sm:w-34 lg:w-38">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Kaassticks</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
 										<p class="text-white text-xs xl:w-5/6">Stick gevuld met romige kaas</p>
 									</span>
-									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">HAPJES</span>
 								</div>
 								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-7 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
 									<img src="/img/mini-loempias.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
-									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Mini loempia's</h3>
-									<span class="block sm:w-34 lg:w-38">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Mini loempia's</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
 										<p class="text-white text-xs xl:w-5/6">Knapperige loempia's geserveerd met pikante saus</p>
 									</span>
-									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">HAPJES</span>
 								</div>
 								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-6 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
 									<img src="/img/scampi-twister.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
-									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Scampi twister</h3>
-									<span class="block sm:w-34 lg:w-38">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Scampi twister</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
 										<p class="text-white text-xs xl:w-5/6">Hapje in filodeeg met scampi en groentjes</p>
 									</span>
-									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">HAPJES</span>
 								</div>
 								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-5 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
 									<img src="/img/bami.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
-									<h3 class="text-xl lg:text-2xl font-bold text-white sm:w-50 lg:w-64">Bami</h3>
-									<span class="block sm:w-34 lg:w-38">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Bami</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
 										<p class="text-white text-xs xl:w-5/6">Frituurhapje gevuld met noedels</p>
 									</span>
-									<span class="uppercase text-brand-secondary font-bold sm:text-right block">HAPJES</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">HAPJES</span>
 								</div>
 							</div>
+
+							<!-- WARME LUCHTOVEN -->
+							<!-- <div class="md:w-[70%]">
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-10 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/kipsate.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Kippeboutjes</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Heerlijk gebakken in de oven</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">WARME LUCHTOVEN</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-9 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/mini-pizza.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Mini pizza's</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6"></p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">WARME LUCHTOVEN</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-8 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/ovenpasteitjes.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Ovenpasteitjes</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Diverse pasteitjes</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">WARME LUCHTOVEN</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-7 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/bruschetta.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Bruschetta</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Met geitenkaas</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">WARME LUCHTOVEN</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-6 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/wafeltje.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Hartig wafeltje</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6"></p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">WARME LUCHTOVEN</span>
+								</div>
+							</div> -->
+
+							<!-- MENU'S -->
+							 <!-- <div class="md:w-[70%]">
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-10 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/kipsate.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">Frietjes met saus naar keuze</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">prijs volgens aantal à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-9 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/mini-pizza.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">Frietjes met saus en frikandel</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-8 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/ovenpasteitjes.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">Frietjes met saus en brochette</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-7 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/bruschetta.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">Frietjes met saus, brochette, kaaskroket en frikandel</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-6 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/wafeltje.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">Frietjes met saus, frikandel, brochette en lookworst</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-5 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/bruschetta.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">Frietjes met saus, frikandel, kaaskroket, brochette en lookworst</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-4 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/wafeltje.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">Pasta, frietjes met saus, frikandel en brochette</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-3 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/bruschetta.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">VIP: 6 hapjes gevolgd door frietjes en frikandel</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+									<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-2 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+										<img src="/img/wafeltje.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0" alt="">
+										<div class="sm:w-2/5 md:w-[35%] 2xl:w-[37%] shrink-0">
+											<h3 class="lg:text-xl font-bold text-white">VIP: 6 hapjes gevolgd door frietjes, frikandel en brochette</h3>
+										</div>
+										<span class="block sm:w-1/5 xl:w-1/4 2xl:w-[30%] shrink-0 text-center">
+											<p class="text-white text-xs xl:w-5/6">à volonté</p>
+										</span>
+										<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+									</div>
+							 </div> -->
+
+							<!-- MENU'S OP BOARD -->
+							<!-- <div class="md:w-[70%]">
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-10 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/stoofvlees.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0 object-cover" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Stoofvlees of vol-au-vent</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Met frietjes en groentjes à volonté</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S OP BORD</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-9 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/halve-kip.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0 object-cover" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Halve kip</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Met frietjes, groentjes en champignonsaus à volonté</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S OP BORD</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-8 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/beenham.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0 object-cover" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Beenham</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Met frietjes, groentjes en champignonsau à volonté</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S OP BORD</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-7 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/steak.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0 object-cover" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Steak (300gr) op grill</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Met frietjes, groentjes en keuze uit 3 warme sauzen. (Rode pepersaus, champignonsaus & béarnaise)</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S OP BORD</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-6 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/filet-pur.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0 object-cover" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Filet Pur</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Met frietjes, groentjes en keuze uit 3 warme sauzen. (Rode pepersaus, champignonsaus & béarnaise) à volonté</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S OP BORD</span>
+								</div>
+							</div> -->
+
+							<!-- PASTA -->
+							<!-- <div class="md:w-[70%]">
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-10 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/bolognaise.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0 object-cover" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Bolognaise</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">tomatensaus, varkensgehakt, worteltjes, paprika</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-9 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/four-cheese.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0 object-cover" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Quattro formaggi</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Comté, emmenthal, chedda</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+								</div>
+								<div class="shadow-[0_7px_10px_rgba(0,0,0,0.23)] z-8 relative bg-linear-to-b from-[#deb451] to-[#e7c75e] px-4 lg:px-7 py-2 flex flex-col sm:flex-row sm:items-center  gap-1.5 sm:gap-6 lg:gap-10 text-center sm:text-left">
+									<img src="/img/carbonara.webp" class="rounded-full size-16 lg:size-19 shrink-0 mx-auto sm:mx-0 object-cover" alt="">
+									<div class="sm:w-1/3 md:w-[27%] lg:w-[30%] xl:w-[35%] 2xl:w-[37%] shrink-0">
+										<h3 class="text-xl lg:text-2xl font-bold text-white">Carbonara</h3>
+									</div>
+									<span class="block sm:w-1/4 2xl:w-[30%] shrink-0">
+										<p class="text-white text-xs xl:w-5/6">Room, ham, spek, oregano</p>
+									</span>
+									<span class="uppercase text-brand-secondary font-bold sm:text-center block sm:w-24 shrink-0 text-sm lg:text-base">MENU'S</span>
+								</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
